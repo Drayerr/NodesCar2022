@@ -27,6 +27,8 @@ class ImportCategoryUseCase {
         })
       })
         .on("end", () => {
+          //a linha abaixo serve para remover o arquivo da pasta tmp após ser lido
+          fs.promises.unlink(file.path)
           resolve(categories)
         })
         .on("error", (err) => {
