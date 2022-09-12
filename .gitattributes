@@ -1,0 +1,2 @@
+# Força o fim da linha como LF quando baixar e quando subir o repositório
+* text=auto eol=lf
